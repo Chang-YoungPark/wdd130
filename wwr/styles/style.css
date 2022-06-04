@@ -261,7 +261,7 @@ main section img {
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
-        width: 60%;
+        width: 25%;
     }
     #background {
         display: none;
