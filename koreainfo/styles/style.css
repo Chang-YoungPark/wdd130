@@ -89,40 +89,35 @@ nav a:hover {
 */
 
 /* The navigation bar */
+
 nav {
     grid-row : 2/3;
     grid-column: 1/10;
-    overflow: hidden; 
-    background-color: #333;
- /*   position: fixed; /* Set the navbar to fixed position */
-    top: 100px; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */   
-  }
-  
-  /* Links inside the navbar */
-nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    background-color: var(--nav-background-color);
+    line-height: 1.5em;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size:17px;
+    font-size: 1.0em;
   }
+nav  {
+    list-style-type: none;
+    display: flex;
   
-  /* Change background on mouse-over */
-nav a:hover {
-    background: #ddd;
-    color: black;
   }
-
-nav a.active{
-    background-color: #04AA6D;
-}   color: white;
-
-nav .icon {
-    display: none;
-}
+  nav a {
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+  
+  }
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+ 
   /* Main content */
 .main {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
